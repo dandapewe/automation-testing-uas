@@ -17,8 +17,8 @@ public class LoginTest extends BaseTest {
         loginPage.login("danda123", "Test@123");
 
         Assert.assertTrue(
-                loginPage.isLoginSuccess("danda123"),
-                "Login gagal, welcome user tidak muncul"
+                loginPage.isLoginSuccess(),
+                "Login gagal, tombol logout tidak muncul"
         );
     }
 }
